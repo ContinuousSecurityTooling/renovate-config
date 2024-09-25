@@ -8,6 +8,8 @@
   "automergeSchedule": ["after 5am and before 5pm every weekday"],
   "separateMinorPatch": true,
   "platformAutomerge": true,
+  "automergeType": "pr",
+  "rebaseWhen": "auto",
   "packageRules": [
     {
       "description": "Automatically merge minor and patch-level updates",
@@ -66,8 +68,5 @@
       "matchUpdateTypes": ["digest"],
       "automergeType": "branch"
     }
-  ],
-  "automergeType": "pr",
-  "platformAutomerge": true,
-  "rebaseWhen": "auto"
+  ]
 }
