@@ -58,7 +58,7 @@
         "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?) versioning=(?<versioning>.+?)\\s\\s*image: (?<currentValue>.*)",
         "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?) versioning=(?<versioning>.+?)\\s\\s*tag: (?<currentValue>.*)",
         "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?) \\s\\s*image: (?<currentValue>.*)",
-        "# renovate: datasource=(?<datasource>[^\\s]+) depName=(?<depName>[^\\s]+)\\s+-\\s+\"(?<currentValue>.*)\""
+        "# renovate: datasource=(?<datasource>[^\\s]+) depName=(?<depName>[^\\s]+)\\s+.*\\s+(\"|')(?<currentValue>.*)(\"|')"
       ],
       "extractVersionTemplate": "{{#if extractVersion}}{{{extractVersion}}}{{else}}^v?(?<version>.+)${{/if}}"
     },
